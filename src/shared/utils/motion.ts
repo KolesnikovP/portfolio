@@ -1,4 +1,4 @@
-type Direction = 'left' | 'right' | 'up' | 'down'
+type Direction = "left" | "right" | "up" | "down";
 
 export const textVariant = (delay: any) => {
   return {
@@ -18,7 +18,12 @@ export const textVariant = (delay: any) => {
   };
 };
 
-export const fadeIn = (type: any, delay: any, duration: any, direction?: Direction) => {
+export const fadeIn = (
+  type: any,
+  delay: any,
+  duration: any,
+  direction?: Direction
+) => {
   return {
     hidden: {
       x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
@@ -58,7 +63,12 @@ export const zoomIn = (delay: any, duration: any) => {
   };
 };
 
-export const slideIn = (type: string, delay: number, duration: number, direction: Direction) => {
+export const slideIn = (
+  type: string,
+  delay: number,
+  duration: number,
+  direction: Direction
+) => {
   return {
     hidden: {
       x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,

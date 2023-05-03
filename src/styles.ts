@@ -8,7 +8,7 @@ type StylesType = {
 
   sectionHeadText: string;
   sectionSubText: string;
-}
+};
 
 const styles: StylesType = {
   paddingX: "sm:px-16 px-6",
