@@ -1,6 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
 import {
-  Contact,
   StarsCanvas,
 } from "../components";
 import { Hero } from "../blocks/Hero";
@@ -10,6 +9,7 @@ import { Experience } from '../blocks/Experience';
 import { Tech } from "../blocks/Tech";
 import { Works } from "../blocks/Works";
 import { Feedbacks } from "../blocks/Feedback";
+import { Contact } from "../blocks/Contact";
 
 function App() {
   return (
