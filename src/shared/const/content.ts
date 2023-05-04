@@ -178,7 +178,15 @@ const experiences: ExperienceProps[] = [
   // },
 ];
 
-const testimonials = [
+export type TestimonialsType = {
+  testimonial: string
+  name: string
+  designation: string
+  company: string
+  image: string
+}
+
+const testimonials: TestimonialsType[] = [
   {
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",

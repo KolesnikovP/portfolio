@@ -24,6 +24,8 @@ const ProjectCard = (props: PostCardProps) => {
       variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
     >
       <Tilt
+      // I don't know how it works. I did't see this prop inside lib but it works
+      // @ts-ignore
         options={{
           max: 45, 
           scale: 1,
