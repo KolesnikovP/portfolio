@@ -1,7 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import {
-  StarsCanvas,
-} from "../components";
+
 import { Hero } from "../blocks/Hero";
 import { About } from "../blocks/About";
 import { Navbar } from "../widgets/Navbar";
@@ -10,6 +8,7 @@ import { Tech } from "../blocks/Tech";
 import { Works } from "../blocks/Works";
 import { Feedbacks } from "../blocks/Feedback";
 import { Contact } from "../blocks/Contact";
+import { StarsCanvas } from "../widgets/StarsCanvas";
 
 function App() {
   return (

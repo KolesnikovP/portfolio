@@ -20,7 +20,7 @@ const initForm: ContactForm = {
 }
 
 const Contact = () => {
-  const formRef = useRef()
+  const formRef = useRef(null)
   const [form, setForm] = useState<ContactForm>(initForm)
   const [loading, setLoading] = useState(false);
 
