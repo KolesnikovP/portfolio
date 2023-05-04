@@ -1,6 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
 import {
-  About,
   Contact,
   Experience,
   Feedbacks,
@@ -9,6 +8,7 @@ import {
   Works,
 } from "../components";
 import { Hero } from "../blocks/Hero";
+import { About } from "../blocks/About";
 import { Navbar } from "../widgets/Navbar";
 
 function App() {

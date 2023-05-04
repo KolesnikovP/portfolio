@@ -40,13 +40,13 @@ export const navLinks: { id: string; title: string }[] = [
   },
 ];
 
-const services = [
+const services: {title: string, icon: string}[] = [
   {
     title: "Web Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Developer",
     icon: mobile,
   },
   {
@@ -59,7 +59,7 @@ const services = [
   },
 ];
 
-const technologies = [
+const technologies: {name: string, icon: string}[] = [
   {
     name: "HTML 5",
     icon: html,
@@ -114,7 +114,14 @@ const technologies = [
   },
 ];
 
-const experiences = [
+const experiences: {
+  title: string
+  company_name: string
+  icon: string
+  iconBg: string
+  date: string
+  points: string[]
+} = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",

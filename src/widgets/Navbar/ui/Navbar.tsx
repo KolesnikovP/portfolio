@@ -1,5 +1,5 @@
 import { styles } from "../../../styles.ts";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { navLinks } from "../../../shared/const/content.ts";
 import { logo, menu, close } from "../../../shared/assets/index.ts";
