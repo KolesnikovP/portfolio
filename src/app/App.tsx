@@ -3,13 +3,13 @@ import {
   Contact,
   Feedbacks,
   StarsCanvas,
-  Works,
 } from "../components";
 import { Hero } from "../blocks/Hero";
 import { About } from "../blocks/About";
 import { Navbar } from "../widgets/Navbar";
 import { Experience } from '../blocks/Experience';
 import { Tech } from "../blocks/Tech";
+import { Works } from "../blocks/Works";
 
 function App() {
   return (
