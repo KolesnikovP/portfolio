@@ -1,6 +1,6 @@
 type Direction = "left" | "right" | "up" | "down";
 
-export const textVariant = (delay: any) => {
+export const textVariant = (delay?: number) => {
   return {
     hidden: {
       y: -50,
@@ -12,17 +12,17 @@ export const textVariant = (delay: any) => {
       transition: {
         type: "spring",
         duration: 1.25,
-        delay: delay,
+        delay: delay || 0,
       },
     },
   };
 };
 
 export const fadeIn = (
-  type: any,
-  delay: any,
-  duration: any,
-  direction?: Direction
+  direction?: Direction | '',
+  type: string,
+  delay: string,
+  duration: number,
 ) => {
   return {
     hidden: {
@@ -87,12 +87,12 @@ export const slideIn = (
   };
 };
 
-export const staggerContainer = (staggerChildren: any, delayChildren: any) => {
+export const staggerContainer = (staggerChildren?: number, delayChildren?: number) => {
   return {
     hidden: {},
     show: {
       transition: {
-        staggerChildren: staggerChildren,
+        staggerChildren: staggerChildren || 0,
         delayChildren: delayChildren || 0,
       },
     },
