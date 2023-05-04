@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, ChangeEvent, FormEventHandler } from "react";
+import { useState, useRef, ChangeEvent, FormEvent } from "react";
 import { motion } from "framer-motion";
 
 import emailjs from '@emailjs/browser';
@@ -24,12 +24,39 @@ const Contact = () => {
   const [form, setForm] = useState<ContactForm>(initForm)
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (event: ChangeEvent) => {
-    
+  const handleChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const {name, value} = event.target;
+    setForm({...form, [name]: value})
   }
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setLoading(true);
+    emailjs.send(
+      'service_kw8v8ru',
+      'template_w9o8e81',
+      {
+        from_name: form.name,
+        to_name: 'Petr Kolesnikov',
+        from_email: form.email,
+        to_email: 'ptrklsnkv@gmail.com',
+        message: form.message
+      },
+      'Ui_defwlvTfpISzHC'
+      )
+      .then(() => {
+        setLoading(false)
+        alert('Thank you. I will back to you as soon as possible.')
+        setForm({
+          name: '',
+          email: '',
+          message: ''
+        })
+      }, (error) => {
+        setLoading(false)
+        console.log(error)
+        alert('Something went wrong')
+      })
   }
 
   return (
