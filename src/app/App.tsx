@@ -1,15 +1,15 @@
 import { BrowserRouter } from "react-router-dom";
 import {
   Contact,
-  Experience,
   Feedbacks,
   StarsCanvas,
-  Tech,
   Works,
 } from "../components";
 import { Hero } from "../blocks/Hero";
 import { About } from "../blocks/About";
 import { Navbar } from "../widgets/Navbar";
+import { Experience } from '../blocks/Experience';
+import { Tech } from "../blocks/Tech";
 
 function App() {
   return (
