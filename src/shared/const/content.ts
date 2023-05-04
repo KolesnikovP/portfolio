@@ -205,7 +205,15 @@ const testimonials = [
   },
 ];
 
-const projects = [
+
+
+const projects: {
+  name: string,
+  description: string,
+  tags: {name: string, color: string}[],
+  image: string,
+  source_code_link: string
+}[] = [
   {
     name: "Car Rent",
     description:
