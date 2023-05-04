@@ -7,7 +7,8 @@ interface SectionWrapperProps {
   idName: string
 }
 
-const SectionWrapper: SectionWrapperProps = (Component, idName) => function HOC(){
+function SectionWrapper<P extends SectionWrapperProps>(Component: React.ComponentType<P>, idName: string) {
+  return function HOC(props: Omit<P, keyof SectionWrapperProps>){
     return(
       <motion.section
         variants={staggerContainer()}
@@ -17,9 +18,9 @@ const SectionWrapper: SectionWrapperProps = (Component, idName) => function HOC(
         className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
       >
         <span className='hash-span' id={idName}>&nbsp;</span>
-        <Component/>
+        <Component {...props as P}/>
       </motion.section>
   )
 }
-
+}
 export default SectionWrapper
