@@ -1,4 +1,3 @@
-import React from "react";
 import { technologies } from "../../../shared/const/content";
 import { BallCanvas } from "../../../widgets/BallsCanvas";
 import { SectionWrapper } from "../../../shared/lib/components/SectionWrapper";
