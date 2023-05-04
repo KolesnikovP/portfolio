@@ -1,7 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import {
   Contact,
-  Experience,
   Feedbacks,
   StarsCanvas,
   Tech,
@@ -10,6 +9,7 @@ import {
 import { Hero } from "../blocks/Hero";
 import { About } from "../blocks/About";
 import { Navbar } from "../widgets/Navbar";
+import { Experience } from '../blocks/Experience';
 
 function App() {
   return (

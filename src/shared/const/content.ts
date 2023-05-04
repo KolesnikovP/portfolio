@@ -114,14 +114,16 @@ const technologies: {name: string, icon: string}[] = [
   },
 ];
 
-const experiences: {
+interface ExperienceProps {
   title: string
   company_name: string
   icon: string
   iconBg: string
   date: string
   points: string[]
-} = [
+}
+
+const experiences: ExperienceProps[] = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",
@@ -269,4 +271,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, ExperienceProps };

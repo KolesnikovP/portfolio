@@ -5,14 +5,12 @@ import {
   StarsCanvas,
 } from "./canvas";
 import Tech from "./Tech";
-import Experience from "./Experience.js";
 import Works from "./Works";
 import Feedbacks from "./Feedbacks.js";
 import Contact from "./Contact.js";
 
 export {
   Tech,
-  Experience,
   Works,
   Feedbacks,
   Contact,
