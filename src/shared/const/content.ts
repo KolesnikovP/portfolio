@@ -11,23 +11,18 @@ import {
   redux,
   tailwind,
   nodejs,
-  // mongodb,
   git,
   figma,
   docker,
-  // meta,
-  // starbucks,
-  // tesla,
-  // shopify,
-  carrent,
+  sbertransport,
   jobit,
-  tripguide,
+  portfolio,
   threejs,
   sber,
   erochem,
 } from "../assets/index.ts";
 
-export const navLinks: { id: string; title: string }[] = [
+export const navLinks: { id: string; title: string; isOutLink?: boolean }[] = [
   {
     id: "about",
     title: "About",
@@ -40,6 +35,11 @@ export const navLinks: { id: string; title: string }[] = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id: "https://drive.google.com/drive/folders/1RNh3J_Yginnp5BGvx2qCT7Sr6Rirawd7?usp=sharing",
+    title: "Download resume",
+    isOutLink: true
+  }
 ];
 
 const services: {title: string, icon: string}[] = [
@@ -240,7 +240,7 @@ const projects: {
         color: "blue-text-gradient",
       },
     ],
-    image: carrent,
+    image: sbertransport,
     source_code_link: "http://www.sberbank.ru/ru/s_m_business/businessapps/transport",
   },
   {
@@ -283,7 +283,7 @@ const projects: {
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: portfolio,
     source_code_link: "https://github.com/KolesnikovP/portfolio",
   },
 ];

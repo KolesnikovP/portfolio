@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { navLinks } from "../../../shared/const/content.ts";
 import { logo, menu, close } from "../../../shared/assets/index.ts";
+import { downloadIcon } from "../../../shared/assets/index.ts";
 
 
 export const Navbar = () => {
@@ -26,6 +27,7 @@ export const Navbar = () => {
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Kolesnikov &nbsp; <span className="sm:block hidden">| Frontend developer</span>
           </p>
+          
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
@@ -36,7 +38,10 @@ export const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              {link.isOutLink ? <a href={link.id} target="_blank">
+                {link.title}
+              </a> : <a href={`#${link.id}`}>{link.title}</a>}
+              
             </li>
           ))}
         </ul>
@@ -65,7 +70,9 @@ export const Navbar = () => {
                     setActive(link.title)}
                   }
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  {link.isOutLink ? <a href={link.id} target="_blank">
+                    {link.title}
+                  </a> : <a href={`#${link.id}`}>{link.title}</a>}
                 </li>
               ))}
             </ul>
