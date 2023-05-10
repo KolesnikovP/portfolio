@@ -42,7 +42,7 @@ const About = () => {
       Highly motivated and results-driven Frontend Developer with 2 years of experience in developing and maintaining web applications using React, JavaScript, TypeScript, Ant Design, Material UI, Mobx, React Query, and Redux. Proven ability to work effectively in fast-paced environments and deliver high-quality results. Experienced in building scalable, performant, and user-friendly applications that meet the business needs.
     </motion.p>
 
-    <div className="mt-20 flex flex-wrap gap-10">
+    <div className="mt-20 flex justify-center flex-wrap gap-10">
       {services.map((service, index) => (
         <ServiceCard key={service.title} index={index} {...service}/> 
       ))}

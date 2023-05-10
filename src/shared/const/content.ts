@@ -23,6 +23,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  sber,
+  erochem,
 } from "../assets/index.ts";
 
 export const navLinks: { id: string; title: string }[] = [
@@ -53,10 +55,10 @@ const services: {title: string, icon: string}[] = [
     title: "Backend Developer",
     icon: backend,
   },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+  // {
+  //   title: "Content Creator",
+  //   icon: creator,
+  // },
 ];
 
 const technologies: {name: string, icon: string}[] = [
@@ -92,10 +94,10 @@ const technologies: {name: string, icon: string}[] = [
     name: "Node JS",
     icon: nodejs,
   },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
+  // {
+  //   name: "MongoDB",
+  //   icon: mongodb,
+  // },
   {
     name: "Three JS",
     icon: threejs,
@@ -125,44 +127,38 @@ export interface ExperienceProps {
 
 const experiences: ExperienceProps[] = [
   {
-    title: "Full stack Developer",
+    title: "Full Stack Developer",
     company_name: "Eurochem",
-    icon: starbucks,
+    icon: erochem,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Feb 2021 - Apr 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Full Stack Developer at Eurochem, where I focused primarily on frontend development using React, HBS (but very rarely), Redux (Thunk), redux-toolkit, react router dom, Material UI, CSS Modules, Bootstrap, HTML5, CSS3, and Figma. I was responsible for the development and maintenance of web applications. I also had some exposure to the server-side of the applications using Node.js, Express, PostgreSQL, Sequelize ORM, but my main focus was on the frontend.",
     ],
   },
   {
-    title: "React Developer",
+    title: "Frontend Developer",
     company_name: "Sber",
-    icon: tesla,
+    icon: sber,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Apr 2022 - May 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Frontend Developer at Sberbank, where I developed and maintained web applications using React 16+, Mobx, React Query, and TypeScript. Implemented webpack and styled components to improve the performance and style of the applications. Worked with JIRA and Bitbucket to manage project development and collaboration. Improved user experience by implementing interactive features and animations.",
     ],
   },
-  {
-    title: "Web Developer",
-    company_name: "TypingHero",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  // {
+  //   title: "Web Developer",
+  //   company_name: "TypingHero",
+  //   icon: shopify,
+  //   iconBg: "#383E56",
+  //   date: "Jan 2022 - Jan 2023",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
   // {
   //   title: "Full stack Developer",
   //   company_name: "Meta",
@@ -189,27 +185,27 @@ export type TestimonialsType = {
 const testimonials: TestimonialsType[] = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "I thought it was impossible to make a website as beautiful as our product, but Petr proved me wrong.",
+    name: "Nikolay V.",
+    designation: "Product manager",
+    company: "Sberbank",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "I've never met a web developer who truly cares about their clients' success like Petr does.",
+    name: "Zamir Boriev",
+    designation: "CTO",
+    company: "Exponenta Realty",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "After Petr optimized our website, the waiting time to load our site has decreased by 35%. We can't thank them enough!",
+    name: "Andrey Maslov",
+    designation: "COO",
+    company: "Greenwood St.Petersburg",
+    image: "https://randomuser.me/api/portraits/men/6.jpg",
   },
 ];
 
@@ -223,16 +219,63 @@ const projects: {
   source_code_link: string
 }[] = [
   {
-    name: "Car Rent",
+    name: "SberTransport",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "The SberTransport platform allows you to manage the full life cycle of transport service orders",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "React Query",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Mobx",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Ant Design",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "http://www.sberbank.ru/ru/s_m_business/businessapps/transport",
+  },
+  {
+    name: "Typing Hero",
+    description:
+      "Keyboard speed training app (in progress). Here I focus more on optimization, tuning the webpack builder, presenting each module as a public api, and moving the project to Feature-Sliced Design Architectural methodology for frontend projects",
+    tags: [
+
+      {
+        name: "webpack",
+        color: "green-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Future-Sliced Design",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: jobit,
+    source_code_link: "https://github.com/KolesnikovP/typing-hero",
+  },
+  {
+    name: "This portfolio",
+    description:
+      "This portfolio where I just told a little bit about myself and decided to work with Three.js and Tailwind.css",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "threejs",
         color: "green-text-gradient",
       },
       {
@@ -240,50 +283,8 @@ const projects: {
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/KolesnikovP/portfolio",
   },
 ];
 
