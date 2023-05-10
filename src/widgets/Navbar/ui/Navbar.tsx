@@ -3,8 +3,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { navLinks } from "../../../shared/const/content.ts";
 import { logo, menu, close } from "../../../shared/assets/index.ts";
-import { downloadIcon } from "../../../shared/assets/index.ts";
-
 
 export const Navbar = () => {
   const [active, setActive] = useState("");
